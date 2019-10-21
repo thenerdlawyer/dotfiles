@@ -55,3 +55,10 @@ It just needs two shell commands before fetching the remote repo.
 6.  If you already have configuration files with identical names, checkout will fail. Back up and remove those files. Skip back up if you don’t need them.
 7.  Prevent untracked files from showing up on `dotfiles status`.
 
+### Submodules
+    
+    dotfiles submodule init
+    
+to first initialize my dotfiles repo to use submodules, and then for each of the plugins I wanted to install:
+
+    dotfiles submodule add https://github.com/some-username/some-plugin.git pack/plugins/start/some-plugin
