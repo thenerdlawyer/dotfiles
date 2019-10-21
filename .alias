@@ -1,0 +1,16 @@
+# git
+alias gs="git status"
+alias ga="git add"
+alias gb="git branch"
+alias gc="git commit"
+alias gd="git diff"
+alias go="git checkout"
+
+# tmux
+alias tls="tmux ls"
+alias tat="tmux attach -t"
+alias tns="tmux new-session"
+alias tks="tmux kill-session -t"
+
+# dotfiles
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
