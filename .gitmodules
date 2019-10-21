@@ -1,3 +1,6 @@
 [submodule "/home/temje/.oh-my-zsh"]
 	path = /home/temje/.oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "/home/temje/powerlevel10k"]
+	path = /home/temje/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
