@@ -1,24 +1,24 @@
 
 set wildignore=*.md~
 "
-let mywiki = {}
-let mywiki.path = '~/Dropbox/mywiki/'
-let mywiki.path_html = '~/Dropbox/mywiki_html/'
-let mywiki.syntax = 'markdown'
-let mywiki.ext = '.md'
-let mywiki.name = 'NerdWiki'
+" let mywiki = {}
+" let mywiki.path = '~/wikis/mywiki/'
+" let mywiki.path_html = '~/wikis/mywiki_html/'
+" let mywiki.syntax = 'markdown'
+" let mywiki.ext = '.md'
+" let mywiki.name = 'NerdWiki'
 
 let escapewiki = {}
-let escapewiki.path = '~/Dropbox/escapewiki/'
-let escapewiki.path_html = '~/Dropbox/escapewiki/escapewiki_html/'
-let escapewiki.template_path = '~/Dropbox/escapewiki/templates'
+let escapewiki.path = '~/wikis/escapewiki/'
+let escapewiki.path_html = '~/wikis/escapewiki/escapewiki_html/'
+let escapewiki.template_path = '~/wikis/escapewiki/templates'
 let escapewiki.template_default = 'default'
 let escapewiki.template_ext = '.html'
 let escapewiki.syntax = 'default'
 let escapewiki.ext = '.wiki'
 let escapewiki.name = 'EscapeWiki'
 
-let g:vimwiki_list = [mywiki, escapewiki]
+let g:vimwiki_list = [escapewiki]
 
 
 nnoremap <Leader>gtd :call ConText()<CR>
