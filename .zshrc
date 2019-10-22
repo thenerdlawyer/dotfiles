@@ -110,3 +110,4 @@ source ~/.alias
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 -
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+. /usr/share/autojump/autojump.sh

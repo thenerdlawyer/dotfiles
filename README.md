@@ -9,6 +9,10 @@
 5. Test that it worked with `echo $SHELL`. Expected result: `/bin/zsh` or similar.
 6. Test with `$SHELL --version`. Expected result: 'zsh 5.1.1' or similar
 
+### Install autojump
+
+	sudo apt install autojump
+
 ### Clone dotfiles
 
     echo 'alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"' >> $HOME/.zshrc
@@ -30,6 +34,14 @@
     
     dotfiles submodule init
 	dotfiles submodule update
+
+### Install Powerline Fonts
+
+	cd ~/fonts
+	cp *.* /mnt/c/Users/username/Desktop/
+
+double-click and click install
+Change terminal font
 
 ### Initial Setup of Bare Repository
 
