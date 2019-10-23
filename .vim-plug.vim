@@ -13,6 +13,10 @@ Plug 'reedes/vim-pencil'
 Plug 'reedes/vim-colors-pencil' 
 "comment stuff out
 Plug 'tpope/vim-commentary' 
+" continuously updated session files
+Plug 'tpope/vim-obsession'
+" clean switching among sessions
+Plug 'dhruvasagar/vim-prosession'
 " quoting/parenthesizing made simple
 Plug 'tpope/vim-surround' 
 " PlugInstall and PlugUpdate will clone fzf in ~/.fzf and run the install script

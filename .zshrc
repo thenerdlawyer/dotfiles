@@ -114,3 +114,5 @@ source ~/.alias
 -
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 . /usr/share/autojump/autojump.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
