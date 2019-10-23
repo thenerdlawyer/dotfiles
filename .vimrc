@@ -5,6 +5,9 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" Identify .md as Markdown
+autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+
 " enable all filetype plugin aspects
 filetype indent plugin on   
 " enable highlighting rules
@@ -35,6 +38,7 @@ set noexpandtab
 
 "SOURCES"
  so ~/.vim-plug.vim
+ so ~/.pencil.vim
  so ~/.guioptions.vim
  so ~/.searchoptions.vim
  so ~/.navigation.vim

@@ -1,4 +1,4 @@
-nnoremap / /\v 
+nnoremap / /\v
 vnoremap / /\v
 set ignorecase
 set smartcase   " override 'ignorecase' if shearch pattern contains uppers
