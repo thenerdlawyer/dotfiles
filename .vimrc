@@ -26,8 +26,10 @@ set ttyfast
 set encoding=utf-8
 " change <Leader> from "\" to ","
 let mapleader=","
-" Edit shared vimrc
+" Edit .vimrc 
 command! Rc :vsp $MYVIMRC
+" Source .vimrc
+nnoremap <leader>rc :so $MYVIMRC<CR>
 " obviate shift for :
 nnoremap ; :
 " set 4-column tabs
