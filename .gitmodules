@@ -7,3 +7,6 @@
 [submodule "autojump"]
 	path = autojump
 	url = https://github.com/wting/autojump.git
+[submodule "/home/nerdlawyer/.fzf"]
+	path = /home/nerdlawyer/.fzf
+	url = https://github.com/junegunn/fzf.git
