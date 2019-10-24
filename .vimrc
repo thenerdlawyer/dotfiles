@@ -27,9 +27,9 @@ set encoding=utf-8
 " change <Leader> from "\" to ","
 let mapleader=","
 " Edit .vimrc 
-command! Rc :vsp $MYVIMRC
+nnoremap <leader>rc :tabe $MYVIMRC<CR>
 " Source .vimrc
-nnoremap <leader>rc :so $MYVIMRC<CR>
+nnoremap <leader>rs :so $MYVIMRC<CR>
 " obviate shift for :
 nnoremap ; :
 " set 4-column tabs
@@ -40,7 +40,7 @@ set noexpandtab
 
 "SOURCES"
  so ~/.vim-plug.vim
- so ~/.pencil.vim
+" so ~/.WriteModes.vim
  so ~/.guioptions.vim
  so ~/.searchoptions.vim
  so ~/.navigation.vim

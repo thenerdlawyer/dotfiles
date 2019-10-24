@@ -3,7 +3,7 @@
 ### Install and set up zsh as default
 
 1. `sudo apt install zsh` 
-2. Verify installation by running `zsh --version`. Expected result: `zsh 5.1.1` or more recent.
+2. _Verify_ installation by running `zsh --version`. Expected result: `zsh 5.1.1` or more recent.
 3. Make it your default shell: `chsh -s $(which zsh)`
 4. Log out and login back again to use your new default shell.
 5. Test that it worked with `echo $SHELL`. Expected result: `/bin/zsh` or similar.

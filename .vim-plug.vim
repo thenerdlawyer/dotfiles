@@ -16,15 +16,19 @@ Plug 'tpope/vim-commentary'
 " continuously updated session files
 Plug 'tpope/vim-obsession'
 " clean switching among sessions
-Plug 'dhruvasagar/vim-prosession'
-" quoting/parenthesizing made simple
 Plug 'tpope/vim-surround' 
 " PlugInstall and PlugUpdate will clone fzf in ~/.fzf and run the install script
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Highlights only active paragraph
 Plug 'junegunn/limelight.vim' 
 " Full screen writing mode
 Plug 'junegunn/goyo.vim' 
+" colorschemes
+Plug 'flazz/vim-colorschemes'
+Plug 'rafi/awesome-vim-colorschemes'
+"wiki
+Plug 'vimwiki/vimwiki' 
+
 
 "Initialize plugin system
 call plug#end()
