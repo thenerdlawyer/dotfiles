@@ -10,7 +10,6 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 "
 " move up/down by screen line instead of file line
-
 nnoremap j gj
 nnoremap k gk
 
@@ -22,6 +21,10 @@ inoremap kk <ESC>
 
 " buffer navigation
 :nnoremap <F5> :buffers<CR>:buffer<Space>
+:nnoremap <F4> :bn<CR>
+:nnoremap <F3> :bp<CR>
+" close buffer without closing pane
+nmap <leader>cb :ene<CR>:bw #<CR>
 
 " makes backspace work in insert mode
 set backspace=indent,eol,start 

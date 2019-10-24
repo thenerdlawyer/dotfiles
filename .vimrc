@@ -1,8 +1,10 @@
 " Vim-Plug
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+if has('gui_running') == 0
+	if empty(glob('~/.vim/autoload/plug.vim'))
+	  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+	endif
 endif
 
 " Identify .md as Markdown
@@ -37,12 +39,26 @@ set tabstop=4
 set softtabstop=4 
 set shiftwidth=4 
 set noexpandtab 
+" inserts timestamp
+nnoremap <F12> "=strftime("%Y-%m-%d-%H-%M-%S")<CR>P
+inoremap <F12> <C-R>=strftime("%Y-%m-%d-%H-%M-%S")<CR>	
 
 "SOURCES"
- so ~/.vim-plug.vim
+" console
+if has("gui_running")
+so \\wsl$\Ubuntu\home\nerdlawyer\.vim-plug.vim
+so \\wsl$\Ubuntu\home\nerdlawyer\.guioptions.vim
+so \\wsl$\Ubuntu\home\nerdlawyer\.searchoptions.vim
+so \\wsl$\Ubuntu\home\nerdlawyer\.navigation.vim
+so \\wsl$\Ubuntu\home\nerdlawyer\.mywikioptions.vim
+so \\wsl$\Ubuntu\home\nerdlawyer\.ConText.vim
 " so ~/.WriteModes.vim
- so ~/.guioptions.vim
- so ~/.searchoptions.vim
- so ~/.navigation.vim
- so ~/.mywikioptions.vim
- so ~/.ConText.vim
+else
+so ~/.vim-plug.vim
+so ~/.guioptions.vim
+so ~/.searchoptions.vim
+so ~/.navigation.vim
+so ~/.mywikioptions.vim
+so ~/.ConText.vim
+" so ~/.WriteModes.vim
+endif

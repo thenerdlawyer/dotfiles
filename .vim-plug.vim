@@ -1,5 +1,10 @@
 " List of plugins called by vim-plug
-call plug#begin('~/.vim/plugged')
+"
+if has('gui_running')
+	call plug#begin()
+else
+	call plug#begin('~/.vim/plugged')
+endif
 
 "status/tabline
 Plug 'vim-airline/vim-airline' 
@@ -28,7 +33,6 @@ Plug 'flazz/vim-colorschemes'
 Plug 'rafi/awesome-vim-colorschemes'
 "wiki
 Plug 'vimwiki/vimwiki' 
-
 
 "Initialize plugin system
 call plug#end()

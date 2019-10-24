@@ -1,7 +1,7 @@
 " script to generate list of all open tasks by context
 
 fu! ConText()
-    cd ~/Dropbox/mywiki/
+    cd ~/vimwiki/
     e ContextList.md
     exe ":normal! ggdG"
     put!=strftime('%c')
