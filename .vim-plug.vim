@@ -18,21 +18,20 @@ Plug 'reedes/vim-pencil'
 Plug 'reedes/vim-colors-pencil' 
 "comment stuff out
 Plug 'tpope/vim-commentary' 
-" continuously updated session files
-Plug 'tpope/vim-obsession'
 " clean switching among sessions
 Plug 'tpope/vim-surround' 
-" PlugInstall and PlugUpdate will clone fzf in ~/.fzf and run the install script
-" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-" Highlights only active paragraph
-Plug 'junegunn/limelight.vim' 
-" Full screen writing mode
-Plug 'junegunn/goyo.vim' 
 " colorschemes
 Plug 'flazz/vim-colorschemes'
 Plug 'rafi/awesome-vim-colorschemes'
-"wiki
-Plug 'vimwiki/vimwiki' 
+"
+" PlugInstall and PlugUpdate will clone fzf in ~/.fzf and run the install script
+" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" Highlights only active paragraph
+" Plug 'junegunn/limelight.vim' 
+" Full screen writing mode
+"	Plug 'junegunn/goyo.vim' 
+" continuously updated session files
+"	Plug 'tpope/vim-obsession'
 
 "Initialize plugin system
 call plug#end()

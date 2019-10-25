@@ -1,6 +1,18 @@
 " Color Scheme
-colo tender
-set background=dark
+if &term =~ "xterm"
+  if has("terminfo")
+	set t_Sf=<Esc>[3%p1%dm
+	set t_Sb=<Esc>[4%p1%dm
+  else
+	set t_Co=8
+	set t_Sf=<Esc>[3%dm
+	set t_Sb=<Esc>[4%dm
+  endif
+endif
+set t_Co=256
+
+ colo tender
+ set background=dark
 
 " keep 3 screen lines above and below cursor
 set scrolloff=3 
@@ -22,10 +34,12 @@ set ruler
  au InsertLeave set norelativenumber
 
 " Airline settings
-let g:airline_theme = 'tender'
+ let g:airline_theme = 'tender'
 let g:airline_powerline_fonts = 1
+" let g:airline#extensions#obsession#enabled = 1
+" let g:airline#extensions#obsession#indicator_text = '$'
 " display all buffers when only one tab open
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 0
 
 " Lightline settings
 " let g:lightline = {
@@ -43,18 +57,14 @@ let g:airline#extensions#tabline#enabled = 1
 " let g:lightline.component_type   = {'buffers': 'tabsel'}
 
 "==GUI ONLY==
-set guifont=Hermit:h12:cANSI:qDRAFT
-highlight Cursor guifg=white guibg=black
-highlight iCursor guifg=white guibg=steelblue
-set guicursor+=i:hor5-iCursor
-
-" Eliminate toolbars and scrollbars
-set guioptions-=m
-set guioptions-=T
-set guioptions-=r
-set guioptions-=L
-
-nnoremap <C-F1>  :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
-nnoremap <C-F2>  :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
-nnoremap <C-F3>  :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
-
+if has("gui_running")
+	set guifont=Hermit:h12:cANSI:qDRAFT
+	highlight Cursor guifg=white guibg=black
+	highlight iCursor guifg=white guibg=steelblue
+	set guicursor+=i:hor5-iCursor
+	" Eliminate toolbars and scrollbars
+	set guioptions-=m
+	set guioptions-=T
+	set guioptions-=r
+	set guioptions-=L
+endif

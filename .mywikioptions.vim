@@ -13,6 +13,8 @@ noremap <Leader>ch <Esc>A\ [@GTD_Home]<Esc>
 noremap <Leader>co <Esc>A\ [@GTD_Office]<Esc>
 noremap <Leader>cw <Esc>A\ [@GTD_Waiting_For]<Esc>
 noremap <Leader>cs <Esc>A\ [@GTD_Someday_Maybe]<Esc>
+noremap <Leader>ea <Esc>A(EMAIL)<Esc>
+" strikeout
 noremap <Leader>mc <Esc>^i~~<Esc>$BbC~~<Esc>
 
 nnoremap <Leader>tg :vimgrep /@GTD_Agendas/j **/*<CR>:cw<CR>
