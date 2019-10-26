@@ -43,7 +43,7 @@ set noexpandtab
 nnoremap <F12> "=strftime("%Y-%m-%d-%H-%M-%S")<CR>P
 inoremap <F12> <C-R>=strftime("%Y-%m-%d-%H-%M-%S")<CR>	
 
-"SOURCES"
+""SOURCES"
 " console
 if has("gui_running")
 so \\wsl$\Ubuntu\home\nerdlawyer\.vim-plug.vim
