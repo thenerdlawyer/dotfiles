@@ -49,6 +49,8 @@ double-click and click install
 
 Change terminal font
 
+---
+
 ### Initial Setup of Bare Repository
 
 Git is the only dependency. The following four lines will set up the bare repository.
