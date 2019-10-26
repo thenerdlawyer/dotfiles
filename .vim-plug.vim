@@ -7,9 +7,9 @@ else
 endif
 
 "status/tabline
-" Plug 'vim-airline/vim-airline' 
+Plug 'vim-airline/vim-airline' 
 "airline themes
-" Plug 'vim-airline/vim-airline-themes' 
+Plug 'vim-airline/vim-airline-themes' 
 "wiki
 Plug 'vimwiki/vimwiki' 
 " Super-powered writing things
