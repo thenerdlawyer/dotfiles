@@ -35,12 +35,18 @@
     dotfiles submodule init
 	dotfiles submodule update
 
+### Install Jekyll
+
+	sudo apt-get install ruby-full build-essential zlib1g-dev
+	gem install jekyll bundler
+
 ### Install Powerline Fonts
 
 	cd ~/fonts
 	cp *.* /mnt/c/Users/username/Desktop/
 
 double-click and click install
+
 Change terminal font
 
 ### Initial Setup of Bare Repository
