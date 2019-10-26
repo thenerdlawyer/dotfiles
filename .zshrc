@@ -1,21 +1,14 @@
-# If you come from bash you might have to change your $PATH.
+ If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/nerdlawyer/.oh-my-zsh"
-
-# italics support
-# export TERM=xterm-256color-italic
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
-POWERLEVEL9K_MODE='nerdfont-complete'
-# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator context dir dir_writable vcs vi_mode)
-# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status date time)
-# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -75,9 +68,6 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-
-. /usr/share/autojump/autojump.sh
-
 plugins=(
 	autojump
    	git
@@ -85,8 +75,9 @@ plugins=(
 	gem 
 )
 
+. /usr/share/autojump/autojump.sh
 
-# source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -115,13 +106,6 @@ plugins=(
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.alias
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
--
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-. /usr/share/autojump/autojump.sh
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
