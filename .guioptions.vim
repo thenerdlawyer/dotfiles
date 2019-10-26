@@ -1,5 +1,5 @@
 " Color Scheme
-colo default-light
+" colo default-light
 " set background=light
 
 " keep 3 screen lines above and below cursor
