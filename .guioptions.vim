@@ -1,18 +1,6 @@
 " Color Scheme
-if &term =~ "xterm"
-  if has("terminfo")
-	set t_Sf=<Esc>[3%p1%dm
-	set t_Sb=<Esc>[4%p1%dm
-  else
-	set t_Co=8
-	set t_Sf=<Esc>[3%dm
-	set t_Sb=<Esc>[4%dm
-  endif
-endif
-set t_Co=256
-
- colo tender
- set background=dark
+colo default-light
+" set background=light
 
 " keep 3 screen lines above and below cursor
 set scrolloff=3 
@@ -23,7 +11,7 @@ set showcmd
 " flash instead of beep
 set visualbell  
 " highlight screen line with cursor
-set cursorline 
+" set cursorline 
 " show cursor coordinates at bottom right
 set ruler       
 " always show status line for last window
@@ -34,7 +22,7 @@ set ruler
  au InsertLeave set norelativenumber
 
 " Airline settings
- let g:airline_theme = 'tender'
+ let g:airline_theme = 'one'
 let g:airline_powerline_fonts = 1
 " let g:airline#extensions#obsession#enabled = 1
 " let g:airline#extensions#obsession#indicator_text = '$'

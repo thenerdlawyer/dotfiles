@@ -12,7 +12,7 @@ export ZSH="/home/nerdlawyer/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-# POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_MODE='nerdfont-complete'
 # POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator context dir dir_writable vcs vi_mode)
 # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status date time)
 # POWERLEVEL9K_PROMPT_ON_NEWLINE=true
@@ -78,7 +78,13 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 . /usr/share/autojump/autojump.sh
 
-plugins=(autojump git)
+plugins=(
+	autojump
+   	git
+	ruby
+	gem 
+)
+
 
 # source $ZSH/oh-my-zsh.sh
 
@@ -116,3 +122,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 . /usr/share/autojump/autojump.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
