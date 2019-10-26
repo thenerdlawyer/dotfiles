@@ -1,6 +1,10 @@
 let g:vimwiki_list = [{'path': '~/vimwiki/',
 						\ 'syntax': 'markdown', 'ext': '.md'}]
 
+nmap <Leader>wq <Plug>VimwikiVSplitLink
+nmap <Leader>we <Plug>VimwikiSplitLink
+nmap <Leader>wb <Plug>VimwikiTabnewLink
+
 nnoremap <Leader>gtd :call ConText()<CR>
 
 noremap <Leader>cg <Esc>A\ [@GTD_Agendas]<Esc>
