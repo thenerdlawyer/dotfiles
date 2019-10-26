@@ -22,7 +22,7 @@ set ruler
  au InsertLeave set norelativenumber
 
 " Airline settings
- let g:airline_theme = 'one'
+ let g:airline_theme = 'solarized'
 let g:airline_powerline_fonts = 1
 " let g:airline#extensions#obsession#enabled = 1
 " let g:airline#extensions#obsession#indicator_text = '$'
