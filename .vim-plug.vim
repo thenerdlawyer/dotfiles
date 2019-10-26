@@ -7,22 +7,22 @@ else
 endif
 
 "status/tabline
-Plug 'vim-airline/vim-airline' 
+" Plug 'vim-airline/vim-airline' 
 "airline themes
-Plug 'vim-airline/vim-airline-themes' 
+" Plug 'vim-airline/vim-airline-themes' 
 "wiki
 Plug 'vimwiki/vimwiki' 
 " Super-powered writing things
 Plug 'reedes/vim-pencil' 
 " iA Writer-inspired theme
-Plug 'reedes/vim-colors-pencil' 
+" Plug 'reedes/vim-colors-pencil' 
 "comment stuff out
 Plug 'tpope/vim-commentary' 
 " clean switching among sessions
 Plug 'tpope/vim-surround' 
 " colorschemes
-Plug 'flazz/vim-colorschemes'
-Plug 'rafi/awesome-vim-colorschemes'
+" Plug 'flazz/vim-colorschemes'
+" Plug 'rafi/awesome-vim-colorschemes'
 "
 " PlugInstall and PlugUpdate will clone fzf in ~/.fzf and run the install script
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
