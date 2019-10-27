@@ -15,7 +15,7 @@ set visualbell
 " show cursor coordinates at bottom right
 set ruler       
 " always show status line for last window
-" set laststatus=2   
+set laststatus=2   
 " show line number relative to cursor in insert mode
  set nu
  au InsertEnter set relativenumber  
