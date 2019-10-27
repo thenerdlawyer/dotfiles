@@ -104,6 +104,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias bj="bundle exec jekyll"
+
 source ~/.alias
 
 # Install Ruby Gems to ~/gems

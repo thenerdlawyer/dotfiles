@@ -18,6 +18,10 @@ syntax on
 set nocompatible 
 " avoids some security exploits regarding modelines 
 set modelines=0 
+" always show status line
+set laststatus=2
+" show mode (compensating for colorscheme)
+hi ModeMsg ctermfg=black
 " show completion options above command
 set wildmenu    
 " when more than one match, list all matches and complete first
@@ -35,16 +39,15 @@ nnoremap <leader>rs :so $MYVIMRC<CR>
 " obviate shift for :
 nnoremap ; :
 " set 4-column tabs
-set tabstop=4 
-set softtabstop=4 
-set shiftwidth=4 
+set tabstop=2 
+set softtabstop=2 
+set shiftwidth=2 
 set noexpandtab 
 " inserts timestamp
 nnoremap <F12> "=strftime("%Y-%m-%d-%H-%M-%S")<CR>P
 inoremap <F12> <C-R>=strftime("%Y-%m-%d-%H-%M-%S")<CR>	
 
 ""SOURCES"
-" console
 if has("gui_running")
 so \\wsl$\Ubuntu\home\nerdlawyer\.vim-plug.vim
 so \\wsl$\Ubuntu\home\nerdlawyer\.guioptions.vim
@@ -52,6 +55,7 @@ so \\wsl$\Ubuntu\home\nerdlawyer\.searchoptions.vim
 so \\wsl$\Ubuntu\home\nerdlawyer\.navigation.vim
 so \\wsl$\Ubuntu\home\nerdlawyer\.mywikioptions.vim
 so \\wsl$\Ubuntu\home\nerdlawyer\.ConText.vim
+" so \\wsl$\Ubuntu\home\nerdlawyer\.statusline.vim
 " so ~/.WriteModes.vim
 else
 so ~/.vim-plug.vim
@@ -60,5 +64,6 @@ so ~/.searchoptions.vim
 so ~/.navigation.vim
 so ~/.mywikioptions.vim
 so ~/.ConText.vim
+" so ~/.statusline.vim
 " so ~/.WriteModes.vim
 endif
