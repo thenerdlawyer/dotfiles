@@ -23,9 +23,19 @@ inoremap kk <ESC>
 :nnoremap <F5> :buffers<CR>:buffer<Space>
 :nnoremap <F4> :bn<CR>
 :nnoremap <F3> :bp<CR>
+
 " close buffer without closing pane
 nmap <leader>cb :ene<CR>:bw #<CR>
 
 " makes backspace work in insert mode
 set backspace=indent,eol,start 
+
+" window navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+set splitbelow
+set splitright
 

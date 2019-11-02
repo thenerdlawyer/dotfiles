@@ -18,3 +18,11 @@ fu! ConText()
     w
 endfun
 
+fu! SingleText()
+        for i in getqflist()
+            let p = i.text
+            exe ":normal! o".p."\<esc>"
+						%s/\[@GTD.*\] \///
+        endfor
+endfun
+

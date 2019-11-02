@@ -21,7 +21,9 @@ set modelines=0
 " always show status line
 set laststatus=2
 " show mode (compensating for colorscheme)
-hi ModeMsg ctermfg=black
+" hi ModeMsg ctermfg=black
+" spellcheck
+set nospell	
 " show completion options above command
 set wildmenu    
 " when more than one match, list all matches and complete first
@@ -37,12 +39,14 @@ nnoremap <leader>rc :tabe $MYVIMRC<CR>
 " Source .vimrc
 nnoremap <leader>rs :so $MYVIMRC<CR>
 " obviate shift for :
-nnoremap ; :
+noremap ; :
 " set 4-column tabs
 set tabstop=2 
 set softtabstop=2 
 set shiftwidth=2 
 set noexpandtab 
+" relative line numbers
+set rnu
 " inserts timestamp
 nnoremap <F12> "=strftime("%Y-%m-%d-%H-%M-%S")<CR>P
 inoremap <F12> <C-R>=strftime("%Y-%m-%d-%H-%M-%S")<CR>	
@@ -55,6 +59,7 @@ so \\wsl$\Ubuntu\home\nerdlawyer\.searchoptions.vim
 so \\wsl$\Ubuntu\home\nerdlawyer\.navigation.vim
 so \\wsl$\Ubuntu\home\nerdlawyer\.mywikioptions.vim
 so \\wsl$\Ubuntu\home\nerdlawyer\.ConText.vim
+" so \\wsl$\Ubuntu\home\nerdlawyer\.smartquotes.vim
 " so \\wsl$\Ubuntu\home\nerdlawyer\.statusline.vim
 " so ~/.WriteModes.vim
 else
@@ -64,6 +69,7 @@ so ~/.searchoptions.vim
 so ~/.navigation.vim
 so ~/.mywikioptions.vim
 so ~/.ConText.vim
+" so ~/.smartquotes.vim
 " so ~/.statusline.vim
 " so ~/.WriteModes.vim
 endif

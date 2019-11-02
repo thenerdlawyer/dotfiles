@@ -1,5 +1,15 @@
-let g:vimwiki_list = [{'path': '~/vimwiki/',
-						\ 'syntax': 'markdown', 'ext': '.md'}]
+let nerdwiki = {}
+let nerdwiki.path = '/mnt/c/users/msmith/dropbox/nerdwiki'
+let nerdwiki.syntax = 'markdown'
+let nerdwiki.ext = 'md'
+
+let escapewiki = {}
+let escapewiki.path = '/mnt/c/users/msmith/dropbox/escapewiki'
+
+let g:vimwiki_list = [nerdwiki, escapewiki]
+
+let g:vimwiki_folding = 'list'
+let g:vimwiki_global_ext = 0
 
 nmap <Leader>wq <Plug>VimwikiVSplitLink
 nmap <Leader>we <Plug>VimwikiSplitLink
@@ -7,27 +17,27 @@ nmap <Leader>wb <Plug>VimwikiTabnewLink
 
 nnoremap <Leader>gtd :call ConText()<CR>
 
-noremap <Leader>cg <Esc>A\ [@GTD_Agendas]<Esc>
-noremap <Leader>ca <Esc>A\ [@GTD_Anywhere]<Esc>
-noremap <Leader>cp <Esc>A\ [@GTD_Phone]<Esc>
-noremap <Leader>cc <Esc>A\ [@GTD_Computer]<Esc>
-noremap <Leader>ce <Esc>A\ [@GTD_Errands]<Esc>
-noremap <Leader>cm <Esc>A\ [@GTD_Email]<Esc>
-noremap <Leader>ch <Esc>A\ [@GTD_Home]<Esc>
-noremap <Leader>co <Esc>A\ [@GTD_Office]<Esc>
-noremap <Leader>cw <Esc>A\ [@GTD_Waiting_For]<Esc>
-noremap <Leader>cs <Esc>A\ [@GTD_Someday_Maybe]<Esc>
-noremap <Leader>ea <Esc>A(EMAIL)<Esc>
-" strikeout
-noremap <Leader>mc <Esc>^i~~<Esc>$BbC~~<Esc>
+noremap <Leader>cg <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Agendas.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>ca <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Anywhere.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>cp <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Phone.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>cc <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Computer.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>ce <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Errands.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>cm <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Email.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>ch <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Home.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>co <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Office.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>cw <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Waiting.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>cs <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Someday.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>cr <Esc>:.s/\[@GTD.*\].\/.//<CR>
 
-nnoremap <Leader>tg :vimgrep /@GTD_Agendas/j **/*<CR>:cw<CR>
-nnoremap <Leader>ta :vimgrep /@GTD_Anywhere/j **/*<CR>:cw<CR>
-nnoremap <Leader>tp :vimgrep /@GTD_Phone/j **/*<CR>:cw<CR>
-nnoremap <Leader>tc :vimgrep /@GTD_Computer/j **/*<CR>:cw<CR>
-nnoremap <Leader>te :vimgrep /@GTD_Errands/j **/*<CR>:cw<CR>
-nnoremap <Leader>tm :vimgrep /@GTD_Email/j **/*<CR>:cw<CR>
-nnoremap <Leader>th :vimgrep /@GTD_Home/j **/*<CR>:cw<CR>
-nnoremap <Leader>to :vimgrep /@GTD_Office/j **/*<CR>:cw<CR>
-nnoremap <Leader>tw :vimgrep /@GTD_Waiting_For/j **/*<CR>:cw<CR>
-nnoremap <Leader>ts :vimgrep /@GTD_Someday_Maybe/j **/*<CR>:cw<CR>
+" Correct for shift from postfix to prefix
+
+nnoremap <Leader>tg :vimgrep /@GTD_Agendas/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+nnoremap <Leader>ta :vimgrep /@GTD_Anywhere/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+nnoremap <Leader>tp :vimgrep /@GTD_Phone/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+nnoremap <Leader>tc :vimgrep /@GTD_Computer/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+nnoremap <Leader>te :vimgrep /@GTD_Errands/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+nnoremap <Leader>tm :vimgrep /@GTD_Email/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+nnoremap <Leader>th :vimgrep /@GTD_Home/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+nnoremap <Leader>to :vimgrep /@GTD_Office/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+nnoremap <Leader>tw :vimgrep /@GTD_Waiting_For/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+nnoremap <Leader>ts :vimgrep /@GTD_Someday_Maybe/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>

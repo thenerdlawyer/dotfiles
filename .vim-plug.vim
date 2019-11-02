@@ -22,6 +22,13 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround' 
 " liquid/jekyll syntax
 Plug 'tpope/vim-liquid' 
+" Calendar
+Plug 'mattn/calendar-vim'
+" Pandoc
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+" smart quotes
+" Plug 'reedes/vim-textobj-quote'
 " colorschemes
 " Plug 'flazz/vim-colorschemes'
 " Plug 'rafi/awesome-vim-colorschemes'
