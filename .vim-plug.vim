@@ -22,6 +22,8 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround' 
 " liquid/jekyll syntax
 Plug 'tpope/vim-liquid' 
+" git wrapper
+Plug 'tpope/vim-fugitive'
 " colorschemes
 " Plug 'flazz/vim-colorschemes'
 " Plug 'rafi/awesome-vim-colorschemes'
