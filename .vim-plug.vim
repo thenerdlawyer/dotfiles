@@ -24,6 +24,13 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-liquid' 
 " git wrapper
 Plug 'tpope/vim-fugitive'
+" Calendar
+Plug 'mattn/calendar-vim'
+" Pandoc
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+" smart quotes
+" Plug 'reedes/vim-textobj-quote'
 " colorschemes
 " Plug 'flazz/vim-colorschemes'
 " Plug 'rafi/awesome-vim-colorschemes'

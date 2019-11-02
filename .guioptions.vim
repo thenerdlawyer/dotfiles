@@ -1,6 +1,6 @@
 " Color Scheme
-" colo default-light
-" set background=light
+colo evening
+set background=dark
 
 " keep 3 screen lines above and below cursor
 set scrolloff=3 
@@ -18,16 +18,16 @@ set ruler
 set laststatus=2   
 " show line number relative to cursor in insert mode
  set nu
- au InsertEnter set relativenumber  
- au InsertLeave set norelativenumber
+" au InsertEnter set relativenumber  
+" au InsertLeave set norelativenumber
 
 " Airline settings
- let g:airline_theme = 'solarized'
-let g:airline_powerline_fonts = 1
+" let g:airline_theme = 'solarized'
+" let g:airline_powerline_fonts = 1
 " let g:airline#extensions#obsession#enabled = 1
 " let g:airline#extensions#obsession#indicator_text = '$'
 " display all buffers when only one tab open
-let g:airline#extensions#tabline#enabled = 0
+" let g:airline#extensions#tabline#enabled = 0
 
 " Lightline settings
 " let g:lightline = {
