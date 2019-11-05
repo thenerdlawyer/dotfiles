@@ -17,27 +17,27 @@ nmap <Leader>wb <Plug>VimwikiTabnewLink
 
 nnoremap <Leader>gtd :call ConText()<CR>
 
-noremap <Leader>cg <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Agendas.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>ca <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Anywhere.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>cp <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Phone.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>cc <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Computer.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>ce <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Errands.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>cm <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Email.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>ch <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Home.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>co <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Office.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>cw <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Waiting.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>cs <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Someday.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>cr <Esc>:.s/\[@GTD.*\].\/.//<CR>
+" noremap <Leader>cg <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Agendas.md<CR><Bar>Gp<Esc>:wq<CR>
+" noremap <Leader>ca <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Anywhere.md<CR><Bar>Gp<Esc>:wq<CR>
+" noremap <Leader>cp <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Phone.md<CR><Bar>Gp<Esc>:wq<CR>
+" noremap <Leader>cc <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Computer.md<CR><Bar>Gp<Esc>:wq<CR>
+" noremap <Leader>ce <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Errands.md<CR><Bar>Gp<Esc>:wq<CR>
+" noremap <Leader>cm <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Email.md<CR><Bar>Gp<Esc>:wq<CR>
+" noremap <Leader>ch <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Home.md<CR><Bar>Gp<Esc>:wq<CR>
+" noremap <Leader>co <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Office.md<CR><Bar>Gp<Esc>:wq<CR>
+" noremap <Leader>cw <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Waiting.md<CR><Bar>Gp<Esc>:wq<CR>
+" noremap <Leader>cs <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Someday.md<CR><Bar>Gp<Esc>:wq<CR>
+" noremap <Leader>cr <Esc>:.s/\[@GTD.*\].\/.//<CR>
 
-" Correct for shift from postfix to prefix
+" " Correct for shift from postfix to prefix
 
-nnoremap <Leader>tg :vimgrep /@GTD_Agendas/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
-nnoremap <Leader>ta :vimgrep /@GTD_Anywhere/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
-nnoremap <Leader>tp :vimgrep /@GTD_Phone/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
-nnoremap <Leader>tc :vimgrep /@GTD_Computer/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
-nnoremap <Leader>te :vimgrep /@GTD_Errands/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
-nnoremap <Leader>tm :vimgrep /@GTD_Email/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
-nnoremap <Leader>th :vimgrep /@GTD_Home/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
-nnoremap <Leader>to :vimgrep /@GTD_Office/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
-nnoremap <Leader>tw :vimgrep /@GTD_Waiting_For/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
-nnoremap <Leader>ts :vimgrep /@GTD_Someday_Maybe/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+" nnoremap <Leader>tg :vimgrep /@GTD_Agendas/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+" nnoremap <Leader>ta :vimgrep /@GTD_Anywhere/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+" nnoremap <Leader>tp :vimgrep /@GTD_Phone/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+" nnoremap <Leader>tc :vimgrep /@GTD_Computer/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+" nnoremap <Leader>te :vimgrep /@GTD_Errands/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+" nnoremap <Leader>tm :vimgrep /@GTD_Email/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+" nnoremap <Leader>th :vimgrep /@GTD_Home/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+" nnoremap <Leader>to :vimgrep /@GTD_Office/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+" nnoremap <Leader>tw :vimgrep /@GTD_Waiting_For/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
+" nnoremap <Leader>ts :vimgrep /@GTD_Someday_Maybe/j ~/vimwiki/Capture.md<CR>:call SingleText()<CR>
