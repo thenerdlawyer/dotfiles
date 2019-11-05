@@ -1,5 +1,5 @@
 " Color Scheme
-colo evening
+" colo dracula
 set background=dark
 
 " keep 3 screen lines above and below cursor
