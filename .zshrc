@@ -114,8 +114,12 @@ source $ZSH/oh-my-zsh.sh
 alias bj="bundle exec jekyll"
 alias sz="source .zshrc"
 alias wt="echo $RANDOM_THEME"
+alias typora="\"/mnt/c/Program Files/Typora/Typora.exe\""
 
 source ~/.alias
+
+# Add Typora WSLENV to PATH
+# export PATH="$TYPORA"
 
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"

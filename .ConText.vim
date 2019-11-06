@@ -1,7 +1,9 @@
 " script to generate list of all open tasks by context
 
 fu! ConText()
-	:execute "normal! ggjdG\<Esc>"
+	:vsplit ~/MasterList.md
+	:execute "normal! dG"
+	:call append(0, "# MASTER LIST")
 	:r $DROPBOX/nerdwiki/Agendas.md
 	:execute "normal! Go\<Esc>"
   :r $DROPBOX/nerdwiki/Anywhere.md
@@ -22,5 +24,10 @@ fu! ConText()
 	:execute "normal! Go\<Esc>"
   :r $DROPBOX/nerdwiki/Waiting For.md
 	:execute "normal! Go\<Esc>"
-	:execute "shellescape(cmd.exe /C start C:/Users/Msmith/Dropbox/nerdwiki/MasterList.md)"
+	:let my_var = expand('%:p')
+	:w
+	:silent execute '!/mnt/c/Program\ Files/Typora/Typora.exe ~/MasterList.md'
+	:q
+	:silent execute '!/mnt/c/Program\ Files\ \(x86\)/Adobe/Acrobat\ DC/Acrobat/Acrobat.exe ~/MasterList.pdf'
+	:redraw!
 endfun

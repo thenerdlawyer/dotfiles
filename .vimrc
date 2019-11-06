@@ -18,7 +18,7 @@ autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 " No numbers in Calendar window
 autocmd FileType calendar setlocal nornu
 " Refresh master context list in vimwiki
-autocmd BufEnter MasterList.md call ConText()
+" autocmd BufEnter MasterList.md call ConText()
 " avoids some security exploits regarding modelines 
 set modelines=0 
 " always show status line

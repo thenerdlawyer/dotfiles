@@ -18,6 +18,7 @@ augroup pencil
 	autocmd!
 	autocmd FileType markdown,mkd,wiki call pencil#init()
 				\ | setl nospell
+augroup END
 " iA Writer-inspired theme
 " Plug 'reedes/vim-colors-pencil' 
 "comment stuff out
