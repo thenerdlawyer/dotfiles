@@ -1,12 +1,15 @@
 let nerdwiki = {}
-let nerdwiki.path = '/mnt/c/users/msmith/dropbox/nerdwiki'
+let nerdwiki.path = '$DROPBOX/nerdwiki'
 let nerdwiki.syntax = 'markdown'
 let nerdwiki.ext = 'md'
 
 let escapewiki = {}
-let escapewiki.path = '/mnt/c/users/msmith/dropbox/escapewiki'
+let escapewiki.path = '$DROPBOX/escapewiki'
 
-let g:vimwiki_list = [nerdwiki, escapewiki]
+let deadwiki = {}
+let deadwiki.path = '$DROPBOX/deadwiki'
+
+let g:vimwiki_list = [nerdwiki, escapewiki, deadwiki]
 
 let g:vimwiki_folding = 'list'
 let g:vimwiki_global_ext = 0
@@ -17,16 +20,16 @@ nmap <Leader>wb <Plug>VimwikiTabnewLink
 
 nnoremap <Leader>gtd :call ConText()<CR>
 
-noremap <Leader>cg <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Agendas.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>ca <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Anywhere.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>cp <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Phone.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>cc <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Computer.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>ce <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Errands.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>cm <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Email.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>ch <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Home.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>co <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Office.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>cw <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Waiting.md<CR><Bar>Gp<Esc>:wq<CR>
-noremap <Leader>cs <Esc>dd:split /mnt/c/Users/Msmith/Dropbox/nerdwiki/Someday.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>cg <Esc>dd:split $DROPBOX/nerdwiki/Agendas.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>ca <Esc>dd:split $DROPBOX/nerdwiki/Anywhere.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>cp <Esc>dd:split $DROPBOX/nerdwiki/Phone.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>cc <Esc>dd:split $DROPBOX/nerdwiki/Computer.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>ce <Esc>dd:split $DROPBOX/nerdwiki/Errands.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>cm <Esc>dd:split $DROPBOX/nerdwiki/Email.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>ch <Esc>dd:split $DROPBOX/nerdwiki/Home.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>co <Esc>dd:split $DROPBOX/nerdwiki/Office.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>cw <Esc>dd:split $DROPBOX/nerdwiki/Waiting.md<CR><Bar>Gp<Esc>:wq<CR>
+noremap <Leader>cs <Esc>dd:split $DROPBOX/nerdwiki/Someday.md<CR><Bar>Gp<Esc>:wq<CR>
 noremap <Leader>cr <Esc>:.s/\[@GTD.*\].\/.//<CR>
 
 " Correct for shift from postfix to prefix
