@@ -6,16 +6,19 @@ if has('gui_running') == 0
 	  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 	endif
 endif
-
-" Identify .md as Markdown
-autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
-
 " enable all filetype plugin aspects
 filetype indent plugin on   
 " enable highlighting rules
 syntax on   
 " gets rid of vi compatibility
 set nocompatible 
+
+" Identify .md as Markdown
+autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+" No numbers in Calendar window
+autocmd FileType calendar setlocal nornu
+" Refresh master context list in vimwiki
+" autocmd BufEnter MasterList.md call ConText()
 " avoids some security exploits regarding modelines 
 set modelines=0 
 " always show status line
@@ -24,6 +27,8 @@ set laststatus=2
 " hi ModeMsg ctermfg=black
 " spellcheck
 set nospell	
+" override Vimwiki spellcheck
+autocmd FileType vimiki set nospell
 " show completion options above command
 set wildmenu    
 " when more than one match, list all matches and complete first
