@@ -34,8 +34,9 @@ Plug 'mattn/calendar-vim'
 " Pandoc
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
+let g:pandoc#modules#disabled = ['folding']
 " smart quotes
-" Plug 'reedes/vim-textobj-quote'
+Plug 'reedes/vim-textobj-quote'
 " colorschemes
 Plug 'flazz/vim-colorschemes'
 Plug 'rafi/awesome-vim-colorschemes'

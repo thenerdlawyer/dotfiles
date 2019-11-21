@@ -55,6 +55,9 @@ set rnu
 " inserts timestamp
 nnoremap <F12> "=strftime("%Y-%m-%d-%H-%M-%S")<CR>P
 inoremap <F12> <C-R>=strftime("%Y-%m-%d-%H-%M-%S")<CR>	
+" Profile to see what's causing lag
+command! ProfileMe :profile start profile.log <bar> profile func * <bar> profile file *
+command! ProfileStop :profile pause
 
 ""SOURCES"
 if has("gui_running")
