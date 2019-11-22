@@ -13,6 +13,10 @@
 
 	sudo apt install autojump
 
+### Install Powerlevel10k
+
+	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+
 ### Clone dotfiles
 
     echo 'alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"' >> $HOME/.zshrc
