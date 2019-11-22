@@ -22,12 +22,12 @@ set laststatus=2
 " au InsertLeave set norelativenumber
 
 " Airline settings
-" let g:airline_theme = 'solarized'
-" let g:airline_powerline_fonts = 1
-" let g:airline#extensions#obsession#enabled = 1
-" let g:airline#extensions#obsession#indicator_text = '$'
-" display all buffers when only one tab open
-" let g:airline#extensions#tabline#enabled = 0
+let g:airline_theme = 'solarized'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#obsession#enabled = 1
+let g:airline#extensions#obsession#indicator_text = '$'
+display all buffers when only one tab open
+let g:airline#extensions#tabline#enabled = 0
 
 " Lightline settings
 " let g:lightline = {

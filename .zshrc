@@ -11,6 +11,10 @@ export ZSH="$HOME/.oh-my-zsh"
 export HOMEDIR=~/
 WSLENV=$WSLENV:HOMEDIR/wp
 
+# enable Powerline
+export TERM="xterm-256color"
+source /usr/share/powerline/bindings/zsh/powerline.zsh
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME

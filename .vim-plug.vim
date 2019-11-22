@@ -7,9 +7,9 @@ else
 endif
 
 "status/tabline
-" Plug 'vim-airline/vim-airline' 
+Plug 'vim-airline/vim-airline' 
 "airline themes
-" Plug 'vim-airline/vim-airline-themes' 
+Plug 'vim-airline/vim-airline-themes' 
 "wiki
 Plug 'vimwiki/vimwiki' 
 " Super-powered writing things
@@ -20,7 +20,7 @@ augroup pencil
 				\ | setl nospell
 augroup END
 " iA Writer-inspired theme
-" Plug 'reedes/vim-colors-pencil' 
+Plug 'reedes/vim-colors-pencil' 
 "comment stuff out
 Plug 'tpope/vim-commentary' 
 " clean switching among sessions
@@ -50,9 +50,9 @@ let g:colorscheme_switcher_exclude = ['default', 'base16*']
 " PlugInstall and PlugUpdate will clone fzf in ~/.fzf and run the install script
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Highlights only active paragraph
-" Plug 'junegunn/limelight.vim' 
+Plug 'junegunn/limelight.vim' 
 " Full screen writing mode
-"	Plug 'junegunn/goyo.vim' 
+Plug 'junegunn/goyo.vim' 
 " continuously updated session files
 "	Plug 'tpope/vim-obsession'
 
