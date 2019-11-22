@@ -119,6 +119,7 @@ alias bj="bundle exec jekyll"
 alias sz="source .zshrc"
 alias wt="echo $RANDOM_THEME"
 alias typora="\"/mnt/c/Program Files/Typora/Typora.exe\""
+alias df="dotfiles"
 
 source ~/.alias
 
