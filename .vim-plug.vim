@@ -7,26 +7,27 @@ else
 endif
 
 "status/tabline
-Plug 'vim-airline/vim-airline' 
+Plug 'vim-airline/vim-airline'
 "airline themes
-Plug 'vim-airline/vim-airline-themes' 
+Plug 'vim-airline/vim-airline-themes'
 "wiki
-Plug 'vimwiki/vimwiki' 
+Plug 'vimwiki/vimwiki'
 " Super-powered writing things
-Plug 'reedes/vim-pencil' 
+Plug 'reedes/vim-pencil'
 augroup pencil
 	autocmd!
-	autocmd FileType markdown,mkd,wiki call pencil#init()
-				\ | setl nospell
+	autocmd FileType markdown,mkd,wiki,txt call pencil#init()
+					\ | colo pencil
+	"				\ | setl nospell
 augroup END
 " iA Writer-inspired theme
-Plug 'reedes/vim-colors-pencil' 
+Plug 'reedes/vim-colors-pencil'
 "comment stuff out
-Plug 'tpope/vim-commentary' 
+Plug 'tpope/vim-commentary'
 " clean switching among sessions
-Plug 'tpope/vim-surround' 
+Plug 'tpope/vim-surround'
 " liquid/jekyll syntax
-Plug 'tpope/vim-liquid' 
+Plug 'tpope/vim-liquid'
 " git wrapper
 Plug 'tpope/vim-fugitive'
 " Calendar
@@ -38,21 +39,21 @@ let g:pandoc#modules#disabled = ['folding']
 " smart quotes
 Plug 'reedes/vim-textobj-quote'
 " colorschemes
-Plug 'flazz/vim-colorschemes'
-Plug 'rafi/awesome-vim-colorschemes'
-Plug 'dracula/vim',{'as': 'dracula'}
-Plug 'Taverius/vim-colorscheme-manager'
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-colorscheme-switcher'
-let g:colorscheme_switcher_exclude = ['default', 'base16*']
+" Plug 'flazz/vim-colorschemes'
+" Plug 'rafi/awesome-vim-colorschemes'
+" Plug 'dracula/vim',{'as': 'dracula'}
+" Plug 'Taverius/vim-colorscheme-manager'
+" Plug 'xolox/vim-misc'
+" Plug 'xolox/vim-colorscheme-switcher'
+" let g:colorscheme_switcher_exclude = ['default', 'base16*']
 
 
 " PlugInstall and PlugUpdate will clone fzf in ~/.fzf and run the install script
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Highlights only active paragraph
-Plug 'junegunn/limelight.vim' 
+Plug 'junegunn/limelight.vim'
 " Full screen writing mode
-Plug 'junegunn/goyo.vim' 
+Plug 'junegunn/goyo.vim'
 " continuously updated session files
 "	Plug 'tpope/vim-obsession'
 
