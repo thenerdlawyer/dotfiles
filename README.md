@@ -39,12 +39,8 @@
 
 ### Install Powerline Fonts
 
-	cd ~/fonts
-	cp *.* /mnt/c/Users/username/Desktop/
-
-double-click and click install
-
-Change terminal font
+	sudo apt install powerline
+	sudo apt install fonts-font-awesome
 
 ---
 
