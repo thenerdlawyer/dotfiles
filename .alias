@@ -21,6 +21,11 @@ alias tks="tmux kill-session -t"
 # dotfiles
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias df="dotfiles"
-alias eatpi="ssh pi@192.168.1.200"
+
+# SSH
+alias localpi="ssh pi@192.168.1.200"
+alias localbasement="ssh nerdlawyer@192.168.1.196"
+alias localmonkey="ssh nerdlawyer@192.168.1.193"
+alias localwork="ssh nerdlawyer@192.168.1.241"
 
 
