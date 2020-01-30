@@ -50,8 +50,7 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set noexpandtab
-" relative line numbers
-set rnu
+
 " inserts timestamp
 nnoremap <F12> "=strftime("%Y-%m-%d-%H-%M-%S")<CR>P
 inoremap <F12> <C-R>=strftime("%Y-%m-%d-%H-%M-%S")<CR>
@@ -81,3 +80,5 @@ else
 	" so ~/.statusline.vim
 	" so ~/.WriteModes.vim
 endif
+
+set rnu " relative line numbers

@@ -1,6 +1,6 @@
 
 alias bj="bundle exec jekyll"
-alias sz="source .zshrc"
+alias sz="source ~/.zshrc"
 alias wt="echo $RANDOM_THEME"
 alias typora="\"/mnt/c/Program Files/Typora/Typora.exe\""
 
@@ -23,8 +23,8 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias df="dotfiles"
 
 # SSH
-alias localpi="ssh pi@192.168.1.200"
-alias localbasement="ssh nerdlawyer@192.168.1.196"
+alias lbasement="ssh nerdlawyer@192.168.1.196"
+alias basement="ssh nerdlawyer@108.20.153.30"
 alias localmonkey="ssh nerdlawyer@192.168.1.193"
 alias localwork="ssh nerdlawyer@192.168.1.241"
 

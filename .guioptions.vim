@@ -17,12 +17,12 @@ set ruler
 " always show status line for last window
 set laststatus=2
 " show line number relative to cursor in insert mode
-set nu
+" set nu
 " au InsertEnter set relativenumber
 " au InsertLeave set norelativenumber
 
 " Airline settings
-let g:airline_theme = 'pencil'
+let g:airline_theme = 'dark'
 let g:airline_powerline_fonts = 1
 " " let g:airline#extensions#obsession#enabled = 0
 " " let g:airline#extensions#obsession#indicator_text = '$'
@@ -30,9 +30,9 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 0
 
 " Pencil settings
-let g:pencil_spell_undercurl = 1
-let g:pencil_higher_contrast_ui = 1
-let g:pencil_terminal_italics = 1
+" let g:pencil_spell_undercurl = 1
+" let g:pencil_higher_contrast_ui = 1
+" let g:pencil_terminal_italics = 1
 
 " Lightline settings
 " let g:lightline = {
