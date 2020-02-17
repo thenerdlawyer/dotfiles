@@ -66,7 +66,7 @@ if has("gui_running")
 	so \\wsl$\Ubuntu\home\nerdlawyer\.navigation.vim
 	so \\wsl$\Ubuntu\home\nerdlawyer\.mywikioptions.vim
 	so \\wsl$\Ubuntu\home\nerdlawyer\.ConText.vim
-	" so \\wsl$\Ubuntu\home\nerdlawyer\.smartquotes.vim
+	so \\wsl$\Ubuntu\home\nerdlawyer\.smartquotes.vim
 	" so \\wsl$\Ubuntu\home\nerdlawyer\.statusline.vim
 	" so ~/.WriteModes.vim
 else
@@ -76,7 +76,7 @@ else
 	so ~/.navigation.vim
 	so ~/.mywikioptions.vim
 	so ~/.ConText.vim
-	" so ~/.smartquotes.vim
+	so ~/.smartquotes.vim
 	" so ~/.statusline.vim
 	" so ~/.WriteModes.vim
 endif

@@ -1,5 +1,5 @@
 " Color Scheme
-" colo pencil
+colo solarized
 " set background=dark
 
 " keep 3 screen lines above and below cursor
@@ -22,7 +22,7 @@ set laststatus=2
 " au InsertLeave set norelativenumber
 
 " Airline settings
-let g:airline_theme = 'dark'
+let g:airline_theme = 'solarized'
 let g:airline_powerline_fonts = 1
 " " let g:airline#extensions#obsession#enabled = 0
 " " let g:airline#extensions#obsession#indicator_text = '$'

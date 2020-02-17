@@ -15,12 +15,12 @@ Plug 'junegunn/limelight.vim' " Highlights only active paragraph
 Plug 'junegunn/goyo.vim' " Full screen writing mode
 Plug 'reedes/vim-lexical' " Better spellcheck mappings
 Plug 'reedes/vim-litecorrect' " Better autocorrections
+Plug 'kana/vim-textobj-user' " Necessary dependency for vim-textobj-sentence
 Plug 'reedes/vim-textobj-sentence' " Treat sentences as text objects
 Plug 'reedes/vim-wordy' " Weasel words and passive voice
-
 Plug 'reedes/vim-textobj-quote' " smart quotes
 Plug 'tpope/vim-liquid' " liquid/jekyll syntax
-
+Plug 'altercation/vim-colors-solarized' "solarized colorscheme_
 
 
 Plug 'vimwiki/vimwiki'
@@ -43,6 +43,7 @@ let g:pandoc#modules#disabled = ['folding']
        \ | call litecorrect#init()
 "      \ | setl spell spl=en_us fdl=4 noru nonu nornu
        \ | setl fdo+=search
+			 \ | call textobj#sentence#init()
   augroup END
 
 " Pencil / Writing Controls {{{
@@ -65,8 +66,8 @@ let g:pandoc#modules#disabled = ['folding']
 
 " COLORSCHEMES
 " Plug 'flazz/vim-colorschemes'
-Plug 'rafi/awesome-vim-colorschemes'
-Plug 'dracula/vim',{'as': 'dracula'}
+" Plug 'rafi/awesome-vim-colorschemes'
+" Plug 'dracula/vim',{'as': 'dracula'}
 " Plug 'Taverius/vim-colorscheme-manager'
 " Plug 'reedes/vim-colors-pencil' " iA Writer-inspired theme
 " Plug 'xolox/vim-misc'
