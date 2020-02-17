@@ -88,6 +88,7 @@ plugins=(
    	git
 	ruby
 	gem 
+	ssh-agent
 )
 
 . /usr/share/autojump/autojump.sh
