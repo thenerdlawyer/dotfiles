@@ -1,6 +1,6 @@
 " Color Scheme
 colo solarized
-" set background=dark
+set background=dark
 
 " keep 3 screen lines above and below cursor
 set scrolloff=3
@@ -24,6 +24,7 @@ set laststatus=2
 " Airline settings
 let g:airline_theme = 'solarized'
 let g:airline_powerline_fonts = 1
+let g:airline_solarized_bg='dark'
 " " let g:airline#extensions#obsession#enabled = 0
 " " let g:airline#extensions#obsession#indicator_text = '$'
 " display all buffers when only one tab open
