@@ -31,3 +31,9 @@ alias localwork="ssh nerdlawyer@192.168.1.241"
 alias rnotes="ssh -t nerdlawyer@108.20.153.30 'cd ~/notes ; zsh'"
 alias rdrafts="ssh -t nerdlawyer@108.20.153.30 'cd ~/drafts ; zsh'"
 
+# TaskWarrior
+alias in="task add +in"
+
+# Powerlevel10k
+alias p10kupdate="git -C $ZSH_CUSTOM/themes/powerlevel10k pull"
+
