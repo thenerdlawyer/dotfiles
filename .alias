@@ -20,7 +20,7 @@ alias tks="tmux kill-session -t"
 
 # dotfiles
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
-alias df="dotfiles"
+# alias df="dotfiles"
 
 # SSH
 alias lbasement="ssh nerdlawyer@192.168.1.196"
@@ -33,6 +33,32 @@ alias rdrafts="ssh -t nerdlawyer@108.20.153.30 'cd ~/drafts ; zsh'"
 
 # TaskWarrior
 alias in="task add +in"
+
+## tickler
+tickle () {
+	deadline=$1
+	shift
+	in +tickle wait:$deadline $@
+}
+alias tick=tickle
+
+## Research
+alias rnd="task add +rnd"
+
+## Read and review
+webpage_title (){
+    wget -qO- "$*" | hxselect -s '\n' -c  'title' 2>/dev/null
+}
+
+read_and_review (){
+    link="$1"
+    title=$(webpage_title $link)
+    echo $title
+    descr="\"Read and review: $title\""
+    id=$(task add +next +rnr "$descr" | sed -n 's/Created task \(.*\)./\1/p')
+    task "$id" annotate "$link"
+}
+alias rnr=read_and_review
 
 # Powerlevel10k
 alias p10kupdate="git -C $ZSH_CUSTOM/themes/powerlevel10k pull"
