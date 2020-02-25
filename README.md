@@ -1,12 +1,10 @@
 ## Installing dotfiles to another system
 
-### [Update Ubuntu OS]
-
-1. Update packages
+### Update packages
 
 	sudo apt-get update && sudo apt-get full-upgrade
 
-2. Update OS
+[__Update OS__]
 
 	sudo -S apt-mark hold procps strace sudo
 	sudo -S env RELEASE_UPGRADER_NO_SCREEN=1 do-release-upgrade
