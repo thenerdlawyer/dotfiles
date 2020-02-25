@@ -1,9 +1,3 @@
 [submodule "oh-my-zsh"]
 	path = .oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-[submodule "autojump"]
-	path = autojump
-	url = https://github.com/wting/autojump.git
-[submodule ".pandoc/pandoc-templates"]
-	path = .pandoc/pandoc-templates
-	url = https://github.com/jgm/pandoc-templates.git
