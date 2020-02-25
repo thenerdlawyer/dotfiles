@@ -1,21 +1,24 @@
 ## Installing dotfiles to another system
 
-### Install and set up zsh as default
+### [Update Ubuntu OS]
 
-1. `sudo apt install zsh` 
-2. Verify installation by running `zsh --version`. Expected result: `zsh 5.1.1` or more recent.
-3. Make it your default shell: `chsh -s $(which zsh)`
-4. Log out and login back again to use your new default shell.
-5. Test that it worked with `echo $SHELL`. Expected result: `/bin/zsh` or similar.
-6. Test with `$SHELL --version`. Expected result: 'zsh 5.1.1' or similar
+1. Update packages
 
-### Install autojump
+	sudo apt-get update && sudo apt-get full-upgrade
 
-	sudo apt install autojump
+2. Update OS
 
-### Install Powerlevel10k
+	sudo -S apt-mark hold procps strace sudo
+	sudo -S env RELEASE_UPGRADER_NO_SCREEN=1 do-release-upgrade
+	sudo -S apt-mark unhold procps strace sudo
 
-	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+### Install packages
+
+	sudo apt install zsh autojump pandoc texlive ruby-full build-essential zlib1g-dev
+	
+### Set up zsh as default
+	
+	chsh -s $(which zsh)`
 
 ### Clone dotfiles
 
@@ -32,15 +35,13 @@
 	dotfiles submodule init
 	dotfiles submodule update
 
+### Install Powerlevel10k
+
+	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+
 ### Install Jekyll
 
-	sudo apt-get install ruby-full build-essential zlib1g-dev
 	gem install jekyll bundler
-
-### Install Powerline Fonts
-
-	sudo apt install powerline
-	sudo apt install fonts-font-awesome
 
 ---
 
